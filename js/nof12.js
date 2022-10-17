@@ -44,7 +44,7 @@ window.onload=function(){
         window.onresize = function () {
             if (h != window.innerHeight || w != window.innerWidth) {
                 window.close(); 
-                window.location = "./404.html"; 
+                window.location = "/404.html"; 
                 alert("请尊重作者QwQ");
                 
             }
