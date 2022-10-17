@@ -8,7 +8,7 @@
 
 ## 预览链接
 
-https://talting.github.io/FBHomePage/
+http://inav.mistyhill.ml/
 
 
 ## 非常简洁的安装教程
