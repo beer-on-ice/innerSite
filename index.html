@@ -44,21 +44,37 @@
         </div>
         <p>TpLink</p>
       </div>
+      <div class="box" id="rosWeb">
+        <div class="img">
+          <a href="javascript:;">
+            <img src="./icos/op.png" />
+          </a>
+        </div>
+        <p>R86s-Ros</p>
+      </div>
       <div class="box" id="opWeb">
         <div class="img">
           <a href="javascript:;">
             <img src="./icos/op.png" />
           </a>
         </div>
-        <p>OpenWrt</p>
+        <p>R86s-OpenWrt</p>
       </div>
-      <div class="box" id="pveWeb">
+      <div class="box" id="pveR86sWeb">
         <div class="img">
           <a href="javascript:;">
             <img src="./icos/proxmox_logo.png" />
           </a>
         </div>
-        <p>Pve</p>
+        <p>R86s-Pve</p>
+      </div>
+      <div class="box" id="pveN3450Web">
+        <div class="img">
+          <a href="javascript:;">
+            <img src="./icos/proxmox_logo.png" />
+          </a>
+        </div>
+        <p>N3450-Pve</p>
       </div>
       <div class="box" id="dsmWeb">
         <div class="img">
@@ -66,23 +82,23 @@
             <img src="./icos/dsm.png" />
           </a>
         </div>
-        <p>黑群晖</p>
+        <p>N3450-黑群晖</p>
       </div>
-      <div class="box" id="haWeb">
+      <!-- <div class="box" id="haWeb">
         <div class="img">
           <a href="javascript:;">
             <img src="./icos/ha.png" />
           </a>
         </div>
         <p>HomeAssistant</p>
-      </div>
+      </div> -->
       <div class="box" id="adWeb">
         <div class="img">
           <a href="javascript:;">
             <img src="./icos/ad.png" />
           </a>
         </div>
-        <p>Adguard</p>
+        <p>N3450-Adguard</p>
       </div>
       <div class="box" id="ebWeb">
         <div class="img">
@@ -90,7 +106,7 @@
             <img src="./icos/emby.png" />
           </a>
         </div>
-        <p>Emby</p>
+        <p>N3450-Emby</p>
       </div>
       <div class="box" id="qlWeb">
         <div class="img">
@@ -98,7 +114,7 @@
             <img src="./icos/ql.png" />
           </a>
         </div>
-        <p>青龙面板</p>
+        <p>N3450-青龙面板</p>
       </div>
     </div>
 
@@ -132,30 +148,34 @@
       }
       $(document).ready(function () {
         var type = !isIPv4(window.location.hostname)
-        $('#tpWeb').click(function () {
-          window.location.href = type ? 'http://www.666987.xyz:18780' : 'http://192.168.50.1:7777'
+        $('#rosWeb').click(function () {
+          window.location.href = type ? 'http://www.666987.xyz:18780' : 'http://192.168.100.1'
         })
         $('#opWeb').click(function () {
-          window.location.href = type ? 'https://www.666987.xyz:18443' : 'http://192.168.50.111:7777'
+          window.location.href = type ? 'https://www.666987.xyz:18443' : 'http://192.168.100.2'
         })
-        $('#pveWeb').click(function () {
-          window.location.href = type ? 'https://www.666987.xyz:18006' : 'https://192.168.50.222:8006'
+        $('#tpWeb').click(function () {
+          window.location.href = type ? 'http://www.666987.xyz:18780' : 'http://192.168.100.3'
         })
-        $('#dsmWeb').click(function () {
-          window.location.href = type ? 'https://www.666987.xyz:15001' : 'https://192.168.50.46:5001'
+        $('#pveR86Web').click(function () {
+          window.location.href = type ? 'https://www.666987.xyz:18006' : 'https://192.168.100.4:8006'
         })
         $('#adWeb').click(function () {
-          window.location.href = type ? 'http://www.666987.xyz:13000' : 'http://192.168.50.111:3000'
+          window.location.href = type ? 'http://www.666987.xyz:13000' : 'http://192.168.100.2:3000'
         })
-        $('#haWeb').click(function () {
-          window.location.href = type ? 'https://www.666987.xyz:18124' : 'http://192.168.50.45:8123'
-        })
-        $('#qlWeb').click(function () {
-          window.location.href = type ? 'https://www.666987.xyz:15700' : 'http://192.168.50.45:5700'
+        $('#pveN3450Web').click(function () {
+          window.location.href = type ? 'https://www.666987.xyz:18124' : 'https://192.168.100.200:8006'
         })
         $('#ebWeb').click(function () {
-          window.location.href = type ? 'https://www.666987.xyz:18096' : 'https://192.168.50.39:8920'
+          window.location.href = type ? 'https://www.666987.xyz:18096' : 'http://192.168.100.201'
         })
+        $('#dsmWeb').click(function () {
+          window.location.href = type ? 'https://www.666987.xyz:15001' : 'https://192.168.100.202:5001'
+        })
+        $('#qlWeb').click(function () {
+          window.location.href = type ? 'https://www.666987.xyz:15700' : 'http://192.168.100.202:5700'
+        })
+        
       })
     </script>
   </body>
