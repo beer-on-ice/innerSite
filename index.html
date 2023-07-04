@@ -9,174 +9,200 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/hpcss.css" />
-    <link rel="stylesheet" href="./css/boxcss.css" />
-    <link rel="stylesheet" href="./css/in.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!-- 禁止开启F12，默认关闭，需要请删除本注释
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/hpcss.css" />
+  <link rel="stylesheet" href="./css/boxcss.css" />
+  <link rel="stylesheet" href="./css/in.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- 禁止开启F12，默认关闭，需要请删除本注释
     -->
-    <script src="./js/nof12.js"></script>
-    <!-- <script src="./js/flower.js"></script> -->
+  <!-- <script src="./js/nof12.js"></script> -->
+  <!-- <script src="./js/flower.js"></script> -->
 
-    <title>内网导航</title>
-  </head>
+  <title>内网导航</title>
+</head>
 
-  <body>
-    <script>
-      AOS.init({
-        easing: 'ease-in-out-sine',
-      })
-    </script>
+<body>
+  <script>
+    AOS.init({
+      easing: 'ease-in-out-sine',
+    })
+  </script>
 
-    <div class="container" data-aos="zoom-out-up">
-      <!-- 如果需要更多链接请复制并添加，并在go文件夹里添加页面 -->
-      <div class="box" id="tpWeb">
-        <div class="img">
-          <a href="javascript:;">
-            <img src="./icos/tp.png" />
-          </a>
-        </div>
-        <p>TpLink</p>
+  <div class="container" data-aos="zoom-out-up">
+    <!-- 如果需要更多链接请复制并添加，并在go文件夹里添加页面 -->
+    <div class="box" id="tpWeb">
+      <div class="img">
+        <a href="javascript:;">
+          <img src="./icos/tplink.png" />
+        </a>
       </div>
-      <div class="box" id="rosWeb">
-        <div class="img">
-          <a href="javascript:;">
-            <img src="./icos/op.png" />
-          </a>
-        </div>
-        <p>Ros</p>
-      </div>
-      <div class="box" id="opWeb">
-        <div class="img">
-          <a href="javascript:;">
-            <img src="./icos/op.png" />
-          </a>
-        </div>
-        <p>OpenWrt</p>
-      </div>
-      <div class="box" id="pveR86sWeb">
-        <div class="img">
-          <a href="javascript:;">
-            <img src="./icos/proxmox_logo.png" />
-          </a>
-        </div>
-        <p>R-Pve</p>
-      </div>
-      <div class="box" id="pveN3450Web">
-        <div class="img">
-          <a href="javascript:;">
-            <img src="./icos/proxmox_logo.png" />
-          </a>
-        </div>
-        <p>N-Pve</p>
-      </div>
-      <div class="box" id="dsmWeb">
-        <div class="img">
-          <a href="javascript:;">
-            <img src="./icos/dsm.png" />
-          </a>
-        </div>
-        <p>黑群晖</p>
-      </div>
-      <!-- <div class="box" id="haWeb">
-        <div class="img">
-          <a href="javascript:;">
-            <img src="./icos/ha.png" />
-          </a>
-        </div>
-        <p>HomeAssistant</p>
-      </div> -->
-      <div class="box" id="adWeb">
-        <div class="img">
-          <a href="javascript:;">
-            <img src="./icos/ad.png" />
-          </a>
-        </div>
-        <p>Adguard</p>
-      </div>
-      <div class="box" id="ebWeb">
-        <div class="img">
-          <a href="javascript:;">
-            <img src="./icos/emby.png" />
-          </a>
-        </div>
-        <p>Emby</p>
-      </div>
-      <div class="box" id="qlWeb">
-        <div class="img">
-          <a href="javascript:;">
-            <img src="./icos/ql.png" />
-          </a>
-        </div>
-        <p>青龙面板</p>
-      </div>
+      <p>TpLink</p>
     </div>
+    <div class="box" id="opWeb">
+      <div class="img">
+        <a href="javascript:;">
+          <img src="./icos/bypass.png" />
+        </a>
+      </div>
+      <p>OpenWrt</p>
+    </div>
+    <div class="box" id="synologyWeb">
+      <div class="img">
+        <a href="javascript:;">
+          <img src="./icos/synology.png" />
+        </a>
+      </div>
+      <p>Synology</p>
+    </div>
+    <div class="box" id="nasToolsWeb">
+      <div class="img">
+        <a href="javascript:;">
+          <img src="./icos/nastools.png" />
+        </a>
+      </div>
+      <p>NasTools</p>
+    </div>
+    <div class="box" id="adguardWeb">
+      <div class="img">
+        <a href="javascript:;">
+          <img src="./icos/adguard.png" />
+        </a>
+      </div>
+      <p>Adguard</p>
+    </div>
+    <div class="box" id="embyWeb">
+      <div class="img">
+        <a href="javascript:;">
+          <img src="./icos/emby.png" />
+        </a>
+      </div>
+      <p>Emby</p>
+    </div>
+    <div class="box" id="homeassistantWeb">
+      <div class="img">
+        <a href="javascript:;">
+          <img src="./icos/homeassistant.png" />
+        </a>
+      </div>
+      <p>HomeAssistant</p>
+    </div>
+    <div class="box" id="qBittorrentWeb">
+      <div class="img">
+        <a href="javascript:;">
+          <img src="./icos/qBittorrent.png" />
+        </a>
+      </div>
+      <p>QBittorrent</p>
+    </div>
+    <div class="box" id="jackettWeb">
+      <div class="img">
+        <a href="javascript:;">
+          <img src="./icos/jackett.png" />
+        </a>
+      </div>
+      <p>Jackett</p>
+    </div>
+    <div class="box" id="zdirWeb">
+      <div class="img">
+        <a href="javascript:;">
+          <img src="./icos/zdir.png" />
+        </a>
+      </div>
+      <p>Zdir</p>
+    </div>
+    <div class="box" id="xiaoyaWeb">
+      <div class="img">
+        <a href="javascript:;">
+          <img src="./icos/alist.png" />
+        </a>
+      </div>
+      <p>XiaoYa</p>
+    </div>
+    <div class="box" id="webdavWeb">
+      <div class="img">
+        <a href="javascript:;">
+          <img src="./icos/webdav.png" />
+        </a>
+      </div>
+      <p>Webdav</p>
+    </div>
+  </div>
 
-    <!-- 鼠标特效 -->
-    <script src="./js/d.js"></script>
-    <script src="./js/m.js"></script>
-    <script type="text/javascript">
-      $.shuicheMouse({
-        type: 11,
-        color: 'rgba(187,67,128,1)',
-      })
-    </script>
-    <!-- 鼠标特效 -->
+  <!-- 鼠标特效 -->
+  <script src="./js/d.js"></script>
+  <script src="./js/m.js"></script>
+  <script type="text/javascript">
+    $.shuicheMouse({
+      type: 11,
+      color: 'rgba(187,67,128,1)',
+    })
+  </script>
+  <!-- 鼠标特效 -->
 
-    <!-- 判断是否是ip地址 -->
-    <script>
-      function isIPv4(ipStr) {
-        const nodes = ipStr.split('.')
-        if (nodes.length !== 4) {
+  <!-- 判断是否是ip地址 -->
+  <script>
+    function isIPv4(ipStr) {
+      const nodes = ipStr.split('.')
+      if (nodes.length !== 4) {
+        return false
+      }
+      for (let i = 0; i < nodes.length; i++) {
+        if (nodes[i] !== parseInt(nodes[i], 10).toString()) {
           return false
         }
-        for (let i = 0; i < nodes.length; i++) {
-          if (nodes[i] !== parseInt(nodes[i], 10).toString()) {
-            return false
-          }
-          if (+nodes[i] < 0 || +nodes[i] > 255) {
-            return false
-          }
+        if (+nodes[i] < 0 || +nodes[i] > 255) {
+          return false
         }
-        return true
       }
-      $(document).ready(function () {
-        var type = !isIPv4(window.location.hostname)
-        $('#rosWeb').click(function () {
-          window.location.href = type ? 'http://www.666987.xyz:18780' : 'http://192.168.100.1'
-        })
-        $('#opWeb').click(function () {
-          window.location.href = type ? 'https://www.666987.xyz:18443' : 'http://192.168.100.2'
-        })
-        $('#tpWeb').click(function () {
-          window.location.href = type ? 'http://www.666987.xyz:18780' : 'http://192.168.100.3'
-        })
-        $('#pveR86Web').click(function () {
-          window.location.href = type ? 'https://www.666987.xyz:18006' : 'https://192.168.100.4:8006'
-        })
-        $('#adWeb').click(function () {
-          window.location.href = type ? 'http://www.666987.xyz:13000' : 'http://192.168.100.2:3000'
-        })
-        $('#pveN3450Web').click(function () {
-          window.location.href = type ? 'https://www.666987.xyz:18124' : 'https://192.168.100.200:8006'
-        })
-        $('#ebWeb').click(function () {
-          window.location.href = type ? 'https://www.666987.xyz:18096' : 'http://192.168.100.201'
-        })
-        $('#dsmWeb').click(function () {
-          window.location.href = type ? 'https://www.666987.xyz:15001' : 'https://192.168.100.202:5001'
-        })
-        $('#qlWeb').click(function () {
-          window.location.href = type ? 'https://www.666987.xyz:15700' : 'http://192.168.100.202:5700'
-        })
-        
+      return true
+    }
+    $(document).ready(function() {
+      var type = !isIPv4(window.location.hostname)
+      $('#tpWeb').click(function() {
+        window.location.href = type ? 'http://192.168.100.1:7777' : 'http://192.168.100.1:7777'
       })
-    </script>
-  </body>
+      $('#opWeb').click(function() {
+        window.location.href = type ? 'http://192.168.100.111' : 'http://192.168.100.111'
+      })
+      $('#adguardWeb').click(function() {
+        window.location.href = type ? 'http://192.168.100.111:3000' : 'http://192.168.100.111:3000'
+      })
+      $('#synologyWeb').click(function() {
+        window.location.href = type ? 'http://192.168.100.34:5000' : 'http://192.168.100.34:5000'
+      })
+      $('#nasToolsWeb').click(function() {
+        window.location.href = type ? 'https://192.168.100.34:3000' : 'https://192.168.100.34:3000'
+      })
+      $('#embyWeb').click(function() {
+        window.location.href = type ? 'http://192.168.100.34:8096' : 'http://192.168.100.34:8096'
+      })
+      $('#homeassistantWeb').click(function() {
+        window.location.href = type ? 'https://192.168.100.34:8123' : 'https://192.168.100.34:8123'
+      })
+      $('#qBittorrentWeb').click(function() {
+        window.location.href = type ? 'https://192.168.100.34:8989' : 'https://192.168.100.34:8989'
+      })
+      $('#jackettWeb').click(function() {
+        window.location.href = type ? 'http://192.168.100.34:9117' : 'http://192.168.100.34:9117'
+      })
+      $('#zdirWeb').click(function() {
+        window.location.href = type ? 'http://192.168.100.34:9999' : 'http://192.168.100.34:9999'
+      })
+      $('#webdavWeb').click(function() {
+        window.location.href = type ? 'http://192.168.100.34:8888' : 'http://192.168.100.34:8888'
+      })
+      $('#xiaoyaWeb').click(function() {
+        window.location.href = type ? 'http://192.168.100.34:5678' : 'http://192.168.100.34:5678'
+      })
+    })
+  </script>
+</body>
+
 </html>
