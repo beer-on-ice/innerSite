@@ -166,7 +166,7 @@
     $(document).ready(function() {
       var type = !isIPv4(window.location.hostname)
       $('#tpWeb').click(function() {
-        window.location.href = type ? 'http://192.168.100.1:7777' : 'http://192.168.100.1:7777'
+        window.location.href = type ? 'http://192.168.100.1' : 'http://192.168.100.1'
       })
       $('#opWeb').click(function() {
         window.location.href = type ? 'http://192.168.100.111' : 'http://192.168.100.111'
